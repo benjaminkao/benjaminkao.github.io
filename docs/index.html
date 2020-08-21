@@ -1,1 +1,250 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- This is where style sheets will be linked -->
+
+    <link rel="stylesheet" href="stylesheets/generalStyle.css">
+
+
+    <!-- Script for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- This is where controllers will be linked -->
+    <script defer type="text/javascript" src="controllers/indexController.js"></script>
+</head>
+
+<nav>
+    <ul class="navigation-bar">
+        <!-- Done in reverse order for flexbox direction: row-reverse -->
+        <li class="navigation-bar-socials-holder"><a href="mailto: benjamin.kao00@gmail.com" id="socials-email"
+                class="navigation-bar-socials far fa-envelope"></a></li>
+        <li class="navigation-bar-socials-holder"><a href="https://www.linkedin.com/in/benjamin-kao-bb2613199/"
+                id="socials-linkedin" class="navigation-bar-socials fab fa-linkedin-in"></a></li>
+        <li class="navigation-bar-socials-holder"><a href="https://github.com/benjaminkao" id="socials-github"
+                class="navigation-bar-socials fab fa-github"></a></li>
+        <li class="navigation-bar-item-holder"><a href="#about-section" id="navigation-about"
+                class="navigation-bar-item">About</a></li>
+        <li class="navigation-bar-item-holder"><a href="#project-section" id="navigation-project"
+                class="navigation-bar-item">Projects</a></li>
+        <li class="navigation-bar-item-holder"><a href="#home-section" id="navigation-home"
+                class="navigation-bar-item active">Home</a></li>
+        <li id="left-navigation-item-holder" class="navigation-bar-item-holder"><a id="left-navigation-item" href="#"
+                class="navigation-bar-item">benjaminkao.github.io</a></li>
+    </ul>
+</nav>
+
+<body>
+
+    <h1 id="home-section"></h1>
+    <div class="home-section-content">
+        <div id="home-intro-container">
+            <h2 id="home-intro">Hello. I'm <span id="home-intro-name">Benjamin</span></h2>
+        </div>
+        <div id="skill-table">
+            <h2 id="skill-table-title">My Skills</h2>
+            <div class="skill-table-row">
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">Java</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="java-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">JavaFX</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="java-fx-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-table-row">
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">HTML5/CSS3</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="html-css-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">JavaScript</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="javascript-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-table-row">
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">C</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="c-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">C++</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="cplusplus-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-table-row">
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">NodeJS</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="node-js-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-table-column">
+                    <h4 class="skill-cell-title">MySQL</h4>
+                    <div class="skill-cell-bar-border">
+                        <div id="mysql-skill-bar" class="skill-cell-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="project-section">Projects</h1>
+
+    <div class="project-section-content">
+        <div id="project-pathfinding-visualizer">
+            <h3 class="project-title">Pathfinding Visualizer</h3>
+            <div class="project-image-carousel">
+                <!-- Main image shown -->
+                <div class="project-current-image-holder">
+                    <a class="prev" onclick="incrementPathfindingImage(-1)">&#10094</a>
+                    <div class="project-image-slides">
+                        <image src="images\PathfindingVisualizerStartupScreenshot.PNG" class="project-image show-image pathfinding-image"  alt="Startup Screen"></image>
+                    </div>
+                    <div class="project-image-slides">
+                        <image src="images\PathfindingVisualizerSettingsScreenshot.PNG" class="project-image pathfinding-image" alt="Settings"></image>
+                    </div>
+                    <div class="project-image-slides">
+                        <image src="images\PathfindingVisualizerAstarScreenshot.PNG" class="project-image pathfinding-image" alt="A* Example"></image>
+                    </div>
+                    <div class="project-image-slides">
+                        <image src="images\PathfindingVisualizerDFSScreenshot.PNG" class="project-image pathfinding-image"  alt="Depth First Search (DFS) Example"></image>
+                    </div>
+                    <div class="project-image-slides">
+                        <image src="images\PathfindingVisualizerDijkstraScreenshot.PNG" class="project-image pathfinding-image" alt="Dijkstra's Example"/></image>
+                    </div>
+                    <a class="next" onclick="incrementPathfindingImage(1)">&#10095</a>
+                </div>                
+
+                <!-- Caption of main image -->
+                <div class="image-caption-container">
+                    <p id="pathfinding-image-caption" class="image-caption">Startup Screen</p>
+                </div>
+
+                <!-- Row of thumbnail images -->
+                <div class="image-thumbnail-row">
+                    <div class="pathfinding-startup-screenshot pathfinding-thumbnail image-thumbnail active-thumbnail" onclick="showPathfindingImage(0)"></div>
+                    <div class="pathfinding-settings-screenshot pathfinding-thumbnail image-thumbnail" onclick="showPathfindingImage(1)"></div>
+                    <div class="pathfinding-astar-screenshot pathfinding-thumbnail image-thumbnail" onclick="showPathfindingImage(2)"></div>
+                    <div class="pathfinding-dfs-screenshot pathfinding-thumbnail image-thumbnail" onclick="showPathfindingImage(3)"></div>
+                    <div class="pathfinding-dijkstra-screenshot pathfinding-thumbnail image-thumbnail" onclick="showPathfindingImage(4)"></div>
+                </div>
+
+            </div>
+            <p>
+                <b>Description</b><br /><br />
+                This is a pathfinding visualizer that shows the process of pathfinding algorithms such
+                as Dijkstra's, A*, Breadth First Search (BFS), and Depth First Search (DFS).
+                <br /><br /><br />
+
+                <b>Motivation</b><br /><br />
+                I wanted to prove that I understood the concepts of these pathfinding algorithms well
+                enough to be able to code them. I also thought that this project would be a good
+                opportunity to work on improving my UI creation skills.<br /><br /><br />
+
+                <b>Built With</b><br /><br />
+                - JavaFX <br /><br /><br />
+
+                <b>For more info and source code:</b><br /><br />
+                Go <a href="https://github.com/benjaminkao/PathfindingVisualizer">here</a><br /><br />
+            </p>
+        </div>
+        <div id="project-tetris">
+            <h3 class="project-title">Tetris Game and Bot</h3>
+            <div class="project-image-carousel">
+                <!-- Main image shown -->
+                <div class="project-current-image-holder">
+                    <a class="prev" onclick="incrementTetrisImage(-1)">&#10094</a>
+                    <div class="project-image-slides">
+                        <image src="images\TetrisStartupScreenshot.PNG" class="project-image show-image tetris-image"  alt="Startup Screen"></image>
+                    </div>
+                    <div class="project-image-slides">
+                        <image src="images\TetrisGameplayScreenshot.PNG" class="project-image tetris-image" alt="Gameplay"></image>
+                    </div>
+                    <div class="project-image-slides">
+                        <image src="images\TetrisBotGameplayScreenshot.PNG" class="project-image tetris-image" alt="Bot Gameplay"></image>
+                    </div>
+                    <div class="project-image-slides">
+                        <image src="images\TetrisGameOverScreenshot.PNG" class="project-image tetris-image"  alt="Game Over"></image>
+                    </div>
+                    <a class="next" onclick="incrementTetrisImage(1)">&#10095</a>
+                </div>                
+                
+
+                <!-- Caption of main image -->
+                <div class="image-caption-container">
+                    <p id="tetris-image-caption" class="image-caption">Startup Screen</p>
+                </div>
+
+                <!-- Row of thumbnail images -->
+                <div class="image-thumbnail-row">
+                    <div class="tetris-startup-screenshot tetris-thumbnail image-thumbnail active-thumbnail" onclick="showTetrisImage(0)"></div>
+                    <div class="tetris-gameplay-screenshot tetris-thumbnail image-thumbnail" onclick="showTetrisImage(1)"></div>
+                    <div class="tetris-bot-gameplay-screenshot tetris-thumbnail image-thumbnail" onclick="showTetrisImage(2)"></div>
+                    <div class="tetris-gameover-screenshot tetris-thumbnail image-thumbnail" onclick="showTetrisImage(3)"></div>
+                </div>
+
+            </div>
+            <p>
+                <b>Description</b><br /><br />
+                This is tetris <br /><br /><br />
+
+                <b>Motivation</b><br /><br />
+                I wanted to learn how to create a game loop and improve my collision detection. I also
+                wanted to learn how to do work in a background thread and have that work be shown on the
+                UI.<br /><br /><br />
+
+                <b>Built With</b><br /><br />
+                - JavaFX <br /><br /><br />
+
+                <b>For more info and source code:</b><br /><br />
+                Go <a href="https://github.com/benjaminkao/Tetris">here</a><br /><br />
+            </p>
+        </div>
+        <div id="project-website">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p>
+                <b>Description</b><br /><br />
+                The website you're scrolling through right now.<br /><br /><br />
+
+                <b>Motivation</b><br /><br />
+                I wanted to create a website where I could showcase the projects I have done. I thought
+                this was a good opportunity to improve at HTML5, CSS3, and JavaScript.<br /><br /><br />
+
+                <b>Built With</b><br /><br />
+                - JavaFX <br /><br /><br />
+
+                <b>For more info and source code:</b><br /><br />
+                Go <a href="https://github.com/benjaminkao/benjaminkao.github.io">here</a><br /><br />
+            </p>
+        </div>
+    </div>
+
+    <div id="about-section-content">
+        <h1 id="about-section" class="">About Me</h1>
+        <p>
+            I am currently a senior at San Francisco State University majoring in Computer Science.
+        </p>
+    </div>
+</body>
+
+
+
+
+</html>
