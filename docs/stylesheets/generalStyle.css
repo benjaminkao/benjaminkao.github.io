@@ -451,6 +451,17 @@ nav {
     background-repeat: no-repeat;
 }
 
+.clock-screenshot {
+    background-image: url(../images/ClockScreenshot.PNG);
+    background-repeat: no-repeat;
+}
+
+.pokemon-app-screenshot {
+    background-image: url(../images/PokemonAppScreenshot.PNG);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
 
 
 /* END OF PROJECT SECTION CONTENT---------------------------- */
